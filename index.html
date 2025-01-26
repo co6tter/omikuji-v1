@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>おみくじ</title>
+  </head>
+  <body class="h-[100svh] bg-gradient-to-r from-[#ffedbc] to-[#ed4264]">
+    <div class="h-full grid place-content-center place-items-center">
+      <main class="w-60">
+        <div class="border-8 rounded-lg border-red-500 p-2 h-96">
+          <section
+            class="border-2 rounded-lg border-red-500 text-center text-red-500 flex flex-col h-full"
+          >
+            <h1 class="border-b-2 border-red-500 py-4">今日の運勢を占う</h1>
+            <div class="flex-1 grid place-content-center place-items-center">
+              <p
+                id="result"
+                class="font-bold text-8xl [writing-mode:vertical-rl] [text-orientation:upright]"
+              >
+                ?
+              </p>
+            </div>
+          </section>
+        </div>
+        <button
+          id="btn"
+          class="w-full rounded-lg text-white text-center py-2 bg-red-500 mt-4 hover:opacity-80 cursor-pointer shadow-[0_4px_#cc0000] active:shadow-[0_1px_#cc0000] active:translate-y-[3px]"
+        >
+          おみくじを引く
+        </button>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
